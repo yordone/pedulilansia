@@ -65,12 +65,10 @@ h6 {
 }
 
 .hero-zoom {
-    transform: scale(1.4);
-}
-
-.footer-zoom {
     transform: scale(1.2);
 }
+
+.footer-zoom {}
 
 .hero-subtitle {
     font-size: 1.2rem;
