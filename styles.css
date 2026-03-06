@@ -37,6 +37,7 @@ h6 {
 }
 
 .logo-wrapper {
+    transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
