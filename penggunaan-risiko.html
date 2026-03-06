@@ -56,7 +56,7 @@
             <h2 class="section-title">Penggunaan Bersama Obat Lain</h2>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="alert-card success">
+                    <div class="alert-card success" data-bs-toggle="modal" data-bs-target="#modalDiuretik">
                         <i class="fas fa-check-circle alert-icon"></i>
                         <div>
                             <h5 class="mb-1">Kombinasi dengan Diuretik</h5>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="alert-card danger">
+                    <div class="alert-card danger" data-bs-toggle="modal" data-bs-target="#modalARB">
                         <i class="fas fa-times-circle alert-icon"></i>
                         <div>
                             <h5 class="mb-1">Kombinasi dengan ARB</h5>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="alert-card danger">
+                    <div class="alert-card danger" data-bs-toggle="modal" data-bs-target="#modalNSAID">
                         <i class="fas fa-exclamation-triangle alert-icon"></i>
                         <div>
                             <h5 class="mb-1">Kombinasi dengan NSAID</h5>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="alert-card success">
+                    <div class="alert-card success" data-bs-toggle="modal" data-bs-target="#modalDiabetes">
                         <i class="fas fa-info-circle alert-icon text-info"></i>
                         <div>
                             <h5 class="mb-1">Kombinasi dengan Obat Diabetes</h5>
@@ -100,6 +100,108 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modals -->
+        <div class="modal fade" id="modalDiuretik" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 border-0 shadow">
+                    <div class="modal-header border-0 bg-success text-white rounded-top-4 p-4">
+                        <h5 class="modal-title fw-bold"><i class="fas fa-check-circle me-2"></i>Kombinasi dengan
+                            Diuretik</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <p>Kombinasi ini sering digunakan dokter karena sangat efektif menurunkan tekanan darah tinggi.
+                            Namun, perlu diperhatikan:</p>
+                        <ul class="mb-0">
+                            <li>Dapat menyebabkan tekanan darah turun terlalu drastis (hipotensi).</li>
+                            <li>Perlu pemantauan kadar garam/elektrolit dalam darah.</li>
+                            <li>Minum air yang cukup sesuai saran dokter.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalARB" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-4 border-0 shadow">
+                    <div class="modal-header border-0 bg-danger text-white rounded-top-4 p-4">
+                        <h5 class="modal-title fw-bold"><i class="fas fa-times-circle me-2"></i>Kombinasi dengan ARB
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <h6 class="fw-bold mb-3 text-danger">Bahaya Penggunaan ACE Inhibitor Bersama ARB:</h6>
+                        <div class="bg-light p-3 rounded-3 mb-3 border-start border-danger border-4">
+                            <ul class="list-unstyled mb-0 lh-lg">
+                                <li class="mb-3"><strong>Losartan:</strong> Jangan diminum bersamaan dengan obat ACE.
+                                    Bisa membuat ginjal bekerja terlalu keras dan rusak. Kadar kalium di darah juga bisa
+                                    naik tinggi yang berbahaya bagi jantung.</li>
+                                <li class="mb-3"><strong>Valsartan:</strong> Sama seperti Losartan, jangan digabung
+                                    dengan obat ACE. Bisa membuat tekanan darah turun terlalu rendah dan ginjal jadi
+                                    sakit. Dokter biasanya menyarankan obat lain yang lebih aman.</li>
+                                <li class="mb-3"><strong>Candesartan:</strong> Jika digabung dengan obat ACE, ginjal
+                                    bisa makin lemah. Kadar kalium yang tinggi bisa mengganggu detak jantung. Ini
+                                    berlaku untuk semua obat ARB termasuk Candesartan.</li>
+                                <li class="mb-3"><strong>Telmisartan:</strong> Jangan dicampur dengan obat ACE. Bisa
+                                    menyebabkan ginjal rusak mendadak dan keseimbangan garam di tubuh jadi kacau.</li>
+                                <li class="mb-0"><strong>Irbesartan:</strong> Sama seperti obat ARB lainnya, jangan
+                                    digabung dengan ACE. Bisa membahayakan fungsi ginjal. Hanya boleh digabung jika
+                                    dokter khusus mengizinkannya.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalNSAID" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 border-0 shadow">
+                    <div class="modal-header border-0 bg-danger text-white rounded-top-4 p-4">
+                        <h5 class="modal-title fw-bold"><i class="fas fa-exclamation-triangle me-2"></i>Kombinasi dengan
+                            NSAID</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <p>Obat pereda nyeri (NSAID) seperti Asam Mefenamat, Ibuprofen, atau Natrium Diklofenak dapat
+                            berinteraksi buruk dengan ACE Inhibitor:</p>
+                        <ul class="mb-0">
+                            <li>Dapat menurunkan efektivitas kerja ACE inhibitor dalam mengontrol tensi.</li>
+                            <li>Risiko <strong>Triple Whammy</strong>: Kombinasi NSAID + Diuretik + ACE inhibitor sangat
+                                meningkatkan risiko gagal ginjal akut mendadak.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDiabetes" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 border-0 shadow">
+                    <div class="modal-header border-0 bg-info text-white rounded-top-4 p-4">
+                        <h5 class="modal-title fw-bold"><i class="fas fa-info-circle me-2"></i>Kombinasi dengan Obat
+                            Diabetes</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <p>Penggunaan ACE inhibitor pada pasien diabetes biasanya bermanfaat untuk melindungi ginjal,
+                            namun:</p>
+                        <ul class="mb-0">
+                            <li>Dapat sedikit meningkatkan sensitivitas insulin, sehingga risiko gula darah rendah
+                                (hipoglikemia) meningkat di awal pengobatan.</li>
+                            <li>Diperlukan pemeriksaan rutin fungsi ginjal (kreatinin) dan kalium.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Risiko dan Efek Samping -->
         <section class="mb-5 pb-4">
