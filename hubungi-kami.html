@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - ACE Inhibitor pada Lansia</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/logo.jpeg" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top me-2 rounded-circle" style="object-fit:cover;">
+                PeduliLansia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="latar-belakang.html">Topik Dasar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ace-inhibitor.html">ACE Inhibitor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="penggunaan-risiko.html">Risiko Obat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="strategi-panduan.html">Tips Aman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anggota.html">Tim Penyusun</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="hubungi-kami.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Kecil -->
+    <header class="bg-primary text-white py-5 text-center shadow-sm"
+        style="background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-0">Hubungi Kami</h1>
+            <p class="lead mt-2 mb-0">Kami siap mendengarkan pertanyaan dan masukkan Anda</p>
+        </div>
+    </header>
+
+    <main class="container py-5 my-4">
+        <div class="row g-5">
+            <!-- Info Kontak -->
+            <div class="col-lg-4">
+                <div class="contact-info-card">
+                    <h4 class="fw-bold mb-4">Informasi Kontak</h4>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon-box me-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Alamat</h6>
+                            <p class="text-muted small mb-0">Jl. Dr. O. Notohamidjojo No.1-10, Salatiga, Jawa Tengah</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon-box me-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="text-muted small mb-0">pedulilansia@uksw.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon-box me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Telepon / WA</h6>
+                            <p class="text-muted small mb-0">+62 812-3456-7890</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 opacity-25">
+
+                    <h6 class="fw-bold mb-3">Media Sosial</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"
+                            style="width: 40px; height: 40px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"
+                            style="width: 40px; height: 40px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-2"
+                            style="width: 40px; height: 40px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulir Kontak -->
+            <div class="col-lg-8">
+                <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+                    <h2 class="fw-bold mb-4">Kirim Pesan</h2>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Nama Lengkap</label>
+                                <input type="text" class="form-control form-control-custom" placeholder="Nama Anda"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Alamat Email</label>
+                                <input type="email" class="form-control form-control-custom"
+                                    placeholder="email@contoh.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Subjek</label>
+                                <input type="text" class="form-control form-control-custom"
+                                    placeholder="Topik pesan Anda" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Pesan</label>
+                                <textarea class="form-control form-control-custom" rows="5"
+                                    placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-primary btn-submit-custom">Kirim Pesan <i
+                                        class="fas fa-paper-plane ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi (Placeholder) -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="map-container shadow-sm border">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Lokasi Kampus FIK UKSW</h5>
+                        <p class="small">Latar belakang peta akan muncul di sini</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                <div class="footer-logo-circle">
+                    <img src="assets/logo_uksw.jpeg" alt="Logo UKSW" class="footer-zoom">
+                </div>
+                <div class="footer-logo-circle">
+                    <img src="assets/LOGOFIK.jpeg" alt="Logo FIK UKSW" class="footer-zoom"
+                        onerror="this.src='assets/LOGOFIK.jpeg'">
+                </div>
+                <div class="footer-logo-circle">
+                    <img src="assets/logo_psik.jpeg" alt="Logo PSIK" class="footer-zoom">
+                </div>
+            </div>
+            <h5>Program Studi Ilmu Keperawatan | Fakultas Ilmu Kesehatan</h5>
+            <p class="mb-0 text-white-50">Universitas Kristen Satya Wacana, Salatiga &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
